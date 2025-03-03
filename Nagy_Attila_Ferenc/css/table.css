@@ -1,0 +1,57 @@
+/* Táblázat konténer */
+.table-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 30px auto;
+    overflow-x: auto; /* Görgetés kisebb kijelzőkön */
+}
+
+/* Táblázat formázása */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white; /* A teljes táblázat háttérszíne fehér */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Táblázat fejléc */
+thead {
+    background-color: #fe0303;
+    color: white;
+    font-weight: bold;
+}
+
+/* Táblázat cellák */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Minden sor fehér háttérrel */
+tbody tr {
+    background-color: white; /* Alapértelmezett fehér háttér */
+}
+
+/* Hover effekt: egér ráhúzásakor világosszürke háttér */
+tbody tr:hover {
+    background-color: #555;
+}
+
+/* Mobilbarát kialakítás */
+@media screen and (max-width: 768px) {
+    .table-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

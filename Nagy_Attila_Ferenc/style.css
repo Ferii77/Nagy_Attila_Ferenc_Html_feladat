@@ -1,0 +1,173 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alap stílusok */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('images/15.jpg');
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100%;
+}
+h2 {
+    text-align: center;
+}
+
+/* Fejléc */
+header {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+#logo {
+    float: left;
+    width: 210px;
+    height: 170px;
+    margin: 5px 0 5px 10px;
+    position: absolute;
+}
+
+/* Navigációs sáv */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    background-color: #555;
+    padding: 10px 20px;
+}
+
+/* Fő tartalom konténer */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+/* Feature Boxok */
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    width: 45%;
+    text-align: center;
+    min-height: 400px;
+}
+
+/* Feature overlay módosítás */
+.feature-overlay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+}
+
+.feature-overlay img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-overlay p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.feature-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.feature-overlay:hover p {
+    opacity: 1;
+}
+
+/* Tartalom */
+.content {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Lábjegyzet */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Konténer2 */
+.container2 {
+    display: flex;
+    gap: 20px; /* Távolság a két article között */
+}
+
+/* Article */
+.article {
+    display: inline-block;
+    width: 45%; /* Állítható a kívánt szélesség */
+    margin-right: 5%;
+    margin-left: 5%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
